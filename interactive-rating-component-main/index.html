@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script> -->
   <link rel="stylesheet" href="rating.css">
   
   <meta charset="UTF-8">
@@ -30,15 +33,15 @@
   </div>
   <!-- BUTTON -->
   <div id="button">
-    <button id="click" value="1" onclick="input('1')">1</button>
-    <button id="click" value="2" onclick="input('2')">2</button>
-    <button id="click" value="3" onclick="input('3')">3</button>
-    <button id="click" value="4" onclick="input('4')">4</button>
-    <button id="click" value="5" onclick="input('5')">5</button>
+    <button class="button" id="click" value="1" >1</button>
+    <button class="button"  id="click" value="2">2</button>
+    <button class="button" id="click" value="3">3</button>
+    <button class="button" id="click" value="4">4</button>
+    <button class="button" id="click" value="5">5</button>
   </div>
   <!-- SUBMIT -->
     <div>
-      <input type="button" value="submit" id="submit"  > 
+      <input type="button" value="submit" id="submit" placeholder="Submit"> 
     </div>
   </div>
 </div>
@@ -60,8 +63,7 @@
         <path d="M85.54 86.19c-2.872-2.517-7.416-2.022-9.446 1.222a4.955 4.955 0 0 0-.8 2.647c0 3.98 2.744 6.59 8.227 5.492 4.184-.839 5.779-6.073 2.02-9.36Z" fill="#FFF" opacity=".48"/><ellipse fill="#FC7614" cx="147.188" cy="81.542" rx="14.812" ry="14.837"/><path d="M73.731 35.75a.537.537 0 0 1-.038-1.076c.113 0 11.343-.828 17.363-.29a.54.54 0 0 1-.096 1.076c-5.908-.538-17.079.274-17.186.285l-.043.005Zm-.891 7.279a.538.538 0 0 1-.038-1.076c.113 0 11.342-.828 17.363-.29a.54.54 0 0 1-.097 1.076c-5.907-.538-17.073.28-17.185.285l-.043.005Zm-.102 7.564a.538.538 0 0 1-.043-1.076c.112 0 11.347-.829 17.362-.29a.54.54 0 0 1-.096 1.075c-5.908-.538-17.073.28-17.186.286l-.037.005Zm-.715 7.564a.537.537 0 0 1-.037-1.076c.112 0 11.342-.829 17.362-.285a.54.54 0 0 1-.096 1.076c-5.908-.538-17.073.28-17.186.285h-.043Z" fill="#FFF"/>
     </g></svg>
   </div>
-  <input type="text" value="" class="select" id="input">
-  
+  <p class="select">you selected <span id="data"> </span> out of 5</p>
   
   <div class="text">
  <h1> Thank you!</h1>
